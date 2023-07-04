@@ -1,0 +1,148 @@
+/* fishcreek.css */
+/*Question 1*/
+body {
+    background-color: #6699ff;
+    color: #d5e3ff;
+    font-family: Verdana, Arial, sans-serif;
+  }
+
+  footer {
+    font-size: 0.70em;
+    font-style: italic;
+  }
+  
+  footer small,
+  footer i {
+    display: none;
+  }
+  
+  #wrapper{
+
+    margin:0;
+    /*border:5px solid royalblue;*/
+    width:950px;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+main{
+padding-left: 70px;
+margin-left: 50px;
+
+}
+
+  #banner{
+
+  background-image:url('Underwater_world_Tropical-fish_desktop-background-hd-1920x1440.jpg');
+  height: 5px;
+
+  position:relative;
+  background-size:cover;
+  background-position: center;
+  padding: 80px;
+  text-align: center;
+}
+
+  #contentwrapper{
+  clear:both;
+  position:relative;
+  width: 100%;
+  display:flex;
+}
+
+  #banner h1{
+  color: white;
+}
+
+  #leftsidebar{
+
+  border:1px black;
+  padding-right: 70px;
+  flex:1;
+}
+
+@media only screen and (max-width:400px) {
+
+  #wrapper {
+
+      flex-direction: column;
+
+  }
+
+  #contentwrapper {
+
+      width: 95%;
+      padding: 10px;
+  }
+
+}
+#nav ul{
+  list-style-type: none;
+  
+}
+
+#nav a{
+  text-decoration-line: none;
+  
+}
+
+
+/* CSS for the table layout */
+  table {
+
+    margin-top: 10px;
+    border:2px solid blue;
+    text-align: center;
+    border-collapse: collapse;
+
+}
+th {
+    border:1px solid black;
+    font:bold;
+    color: blue;
+    padding: 0.5em;
+  }
+  
+  td{
+    border:1px solid black;
+    text-align:left;
+    padding:0.5em;
+
+  }
+
+      /* CSS for the form layout */
+        /* CSS for the form layout */
+    .form-container {
+      width: 800px;
+      margin: 0 auto;
+      font-family: Arial, sans-serif;
+      
+    }
+
+    .form-container label,
+    .form-container input,
+    .form-container textarea,
+    .form-container select {
+      display:inline;
+      margin-bottom: 10px;
+      
+    }
+
+    .form-container textarea {
+      resize: vertical;
+    }
+
+    .form-container fieldset {
+      margin-bottom: 15px;
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+
+    .form-container legend {
+      font-weight: bold;
+    }
+
+    .form-container button {
+      margin-top: 10px;
+    }

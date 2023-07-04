@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Online Pizza Order</title>
+  <style>
+    /* CSS for the form layout */
+    .form-container {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    .form-container label,
+    .form-container input,
+    .form-container textarea {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .form-container button {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <img src="OIP.jpg" alt="Pizza Shop Logo" width="150">
+    <h2>Online Pizza Order</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="address">Address:</label>
+      <input type="text" id="address" name="address" required>
+
+      <label for="contact">Contact Number:</label>
+      <input type="text" id="contact" name="contact" required>
+
+      <fieldset>
+        <legend>Pizza Size:</legend>
+        <input type="radio" id="large" name="size" value="Large">
+        <label for="large">Large</label><br>
+
+        <input type="radio" id="medium" name="size" value="Medium">
+        <label for="medium">Medium</label><br>
+
+        <input type="radio" id="small" name="size" value="Small">
+        <label for="small">Small</label><br>
+      </fieldset>
+
+      <fieldset>
+        <legend>Pizza Toppings:</legend>
+        <input type="checkbox" id="pepperoni" name="toppings" value="Pepperoni">
+        <label for="pepperoni">Pepperoni</label><br>
+
+        <input type="checkbox" id="mushrooms" name="toppings" value="Mushrooms">
+        <label for="mushrooms">Mushrooms</label><br>
+
+        <input type="checkbox" id="onions" name="toppings" value="Onions">
+        <label for="onions">Onions</label><br>
+
+        <input type="checkbox" id="olives" name="toppings" value="Olives">
+        <label for="olives">Olives</label><br>
+
+        <input type="checkbox" id="bell-peppers" name="toppings" value="Bell Peppers">
+        <label for="bell-peppers">Bell Peppers</label><br>
+      </fieldset>
+
+      <label for="comments">Additional Comments:</label>
+      <textarea id="comments" name="comments" rows="4"></textarea>
+
+      <button type="submit">Submit</button>
+      <button type="reset">Clear</button>
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Music Survey Form</title>
+  <style>
+    /* CSS for the form layout */
+    .form-container {
+      max-width: 400px;
+      margin: 0 auto;
+      font-family: Arial, sans-serif;
+    }
+
+    .form-container label,
+    .form-container input,
+    .form-container textarea,
+    .form-container select {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .form-container textarea {
+      resize: vertical;
+    }
+
+    .form-container fieldset {
+      margin-bottom: 15px;
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+
+    .form-container legend {
+      font-weight: bold;
+    }
+
+    .form-container button {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>Music Survey Form</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">E-mail Address:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="comments">Comments:</label>
+      <textarea id="comments" name="comments" rows="3" cols="60"></textarea>
+
+      <fieldset>
+        <legend>Favorite Music Genre:</legend>
+        <input type="radio" id="pop" name="genre" value="Pop">
+        <label for="pop">Pop</label><br>
+
+        <input type="radio" id="rock" name="genre" value="Rock">
+        <label for="rock">Rock</label><br>
+
+        <input type="radio" id="hiphop" name="genre" value="Hip Hop">
+        <label for="hiphop">Hip Hop</label><br>
+      </fieldset>
+
+      <fieldset>
+        <legend>Favorite Artists:</legend>
+        <input type="checkbox" id="artist1" name="artists" value="Artist 1">
+        <label for="artist1">Artist 1</label><br>
+
+        <input type="checkbox" id="artist2" name="artists" value="Artist 2">
+        <label for="artist2">Artist 2</label><br>
+
+        <input type="checkbox" id="artist3" name="artists" value="Artist 3">
+        <label for="artist3">Artist 3</label><br>
+      </fieldset>
+
+      <label for="selectbox">Select a Music Player:</label>
+      <select id="selectbox" name="music-player">
+        <option value="spotify">Spotify</option>
+        <option value="apple-music">Apple Music</option>
+        <option value="amazon-music">Amazon Music</option>
+        <option value="youtube-music">YouTube Music</option>
+      </select>
+
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+    </form>
+  </div>
+</body>
+</html>
